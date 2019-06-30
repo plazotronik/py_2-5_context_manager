@@ -1,9 +1,5 @@
 import subprocess
 from datetime import datetime
-# import logging
-# import sys
-# sys.stdout = open('test_0.log', 'a')
-
 
 time_1 = datetime.now()
 
@@ -29,8 +25,6 @@ class Mytraceroute:
         print(f'\n=== Конец менеджера контекста ==='
               f'\n=== {self.time_cm_2} ===')
         print(f'\n*** Менеджер контекста выполнился за {(self.time_cm_2 - self.time_cm_1).total_seconds()} секунд. ***\n')
-
-
 
 with Mytraceroute(cmd) as shell:
     shell.communicate()
