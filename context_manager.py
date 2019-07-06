@@ -26,6 +26,9 @@ class Mytraceroute:
               f'\n=== {self.time_cm_2} ===')
         print(f'\n*** Менеджер контекста выполнился за {(self.time_cm_2 - self.time_cm_1).total_seconds()} секунд. ***\n')
 
+if __name__ == '__main__':
+    pass
+
 with Mytraceroute(cmd) as shell:
     shell.communicate()
 
